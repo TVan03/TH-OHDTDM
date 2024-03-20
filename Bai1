@@ -1,0 +1,24 @@
+#include <stdio.h>
+
+// Hàm kiểm tra xem số có phải là bội của 7 hay không
+int isMultipleOfSeven(int num) {
+    return (num % 7 == 0);
+}
+
+// Hàm xuất các số nguyên có 2 chữ số và là bội của 7
+void printMultiplesOfSeven() {
+    int i;
+    printf("Cac so nguyen co 2 chu so va la boi cua 7 la:\n");
+    for (i = 10; i <= 99; i++) {
+        if (isMultipleOfSeven(i)) {
+            printf("%d ", i);
+        }
+    }
+    printf("\n");
+}
+
+// Hàm main để thực thi chương trình
+int main() {
+    printMultiplesOfSeven();
+    return 0;
+}
